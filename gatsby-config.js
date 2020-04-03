@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'fkajzer.github.io',
-    description: 'Personal website usign Gatsby + TypeScript',
-    author: 'Filip Kajzer <fkajzer@gmail.com>',
+    description: 'Personal website using Gatsby + TypeScript',
+    author: 'Filip Kajzer <filipkajzer@gmail.com>',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
