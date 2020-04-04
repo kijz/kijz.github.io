@@ -1,23 +1,31 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React, { useState } from 'react';
 
 import Layout from '../components/Layout';
-import Image from '../components/Image';
-import Links from '../components/Links';
-import SEO from '../components/SEO';
+import Profile from '../components/Profile';
+import Projects from '../components/Projects';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <Links />
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-);
+const OPEN_WIDTH = 25;
+
+const IndexPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => setIsOpen(!isOpen);
+
+  return (
+    <Layout>
+      <div className="leftSide" style={{ width: `${isOpen ? OPEN_WIDTH : 100}%` }}>
+        <Profile onClick={handleClick} />
+      </div>
+      <div
+        className="rightSide"
+        style={{
+          width: `${100 - OPEN_WIDTH}vw`,
+          left: `${isOpen ? OPEN_WIDTH : 100}%`,
+        }}
+      >
+        <Projects />
+      </div>
+    </Layout>
+  );
+};
 
 export default IndexPage;

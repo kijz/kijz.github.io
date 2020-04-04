@@ -1,0 +1,69 @@
+.leftSide {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: width 1s ease-in-out;
+}
+
+.rightSide {
+  position: absolute;
+  top: 0;
+  transition: left 1s ease-in-out;
+  box-shadow: -8px 3px 12px 3px rgba(250, 195, 250, 1);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 120px;
+  border: 2px solid gray;
+  border-radius: 50%;
+
+  margin-bottom: 20px;
+}
+
+.projectButton {
+  margin: 20px 0;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 20px;
+
+  outline: 0;
+  cursor: pointer;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  color: darkgray;
+
+  transition-property: transform, color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.iconLink:hover {
+  transform: scale(1.25);
+  color: black;
+}
+
+.projects {
+  height: 100vh;
+  padding: 50px;
+  overflow: scroll;
+}
