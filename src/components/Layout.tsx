@@ -1,7 +1,7 @@
 import React from 'react';
 
-import './components.css';
-import './layout.css';
+import '../styles/components.css';
+import '../styles/layout.css';
 
 const Layout: React.FC = ({ children }) => {
   return (
