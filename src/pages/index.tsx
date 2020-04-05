@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import Layout from '../components/Layout';
-import Profile from '../components/Profile';
+import Profile from '../components/Profile/Profile';
 import Projects from '../components/Projects';
 
 const IndexPage = () => {
