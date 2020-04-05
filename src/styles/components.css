@@ -41,6 +41,7 @@
   text-align: center;
   justify-content: center;
   font-size: 30px;
+  cursor: pointer;
 }
 .high-five p {
   margin: calc(var(--spacing) / 3) 0;
