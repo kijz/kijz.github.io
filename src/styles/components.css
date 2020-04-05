@@ -8,6 +8,11 @@
   --open-width: 25%;
 }
 
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
 .leftSide {
   display: flex;
   align-items: center;
