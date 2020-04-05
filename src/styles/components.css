@@ -1,16 +1,22 @@
+:root {
+  --transition-duration-default: 300ms;
+  --transition-duration-long: 500ms;
+  --spacing: 1.45rem;
+}
+
 .leftSide {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  transition: width 1s ease-in-out;
+  transition: width var(--transition-duration-long) ease-in-out;
 }
 
 .rightSide {
   position: absolute;
   top: 0;
-  transition: left 1s ease-in-out;
+  transition: left var(--transition-duration-long) ease-in-out;
   box-shadow: -8px 3px 12px 3px rgba(250, 195, 250, 1);
 }
 
@@ -22,18 +28,18 @@
 }
 
 .avatar {
-  width: 120px;
-  border: 2px solid gray;
+  width: 130px;
+  border: 3px solid gray;
   border-radius: 50%;
 
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing);
 }
 
 .projectButton {
-  margin: 20px 0;
+  margin: var(--spacing) 0;
   border: 1px solid black;
   border-radius: 20px;
-  padding: 5px 20px;
+  padding: 5px var(--spacing);
 
   outline: 0;
   cursor: pointer;
@@ -53,7 +59,7 @@
   color: darkgray;
 
   transition-property: transform, color;
-  transition-duration: 300ms;
+  transition-duration: var(--transition-duration-default);
   transition-timing-function: ease-out;
 }
 
@@ -64,6 +70,10 @@
 
 .projects {
   height: 100vh;
-  padding: 50px;
+  padding: calc(2 * var(--spacing));
   overflow: scroll;
+}
+
+.projects h2:first-of-type {
+  margin-top: 0;
 }
