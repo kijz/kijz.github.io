@@ -2,22 +2,18 @@
   --transition-duration-default: 300ms;
   --transition-duration-long: 500ms;
   --spacing: 1.45rem;
+
+  --mobile-breakpoint: 992px;
+
+  --open-width: 25%;
 }
 
 .leftSide {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
   transition: width var(--transition-duration-long) ease-in-out;
-}
-
-.rightSide {
-  position: absolute;
-  top: 0;
-  transition: left var(--transition-duration-long) ease-in-out;
-  box-shadow: -8px 3px 12px 3px rgba(250, 195, 250, 1);
 }
 
 .profile {
@@ -69,11 +65,59 @@
 }
 
 .projects {
-  height: 100vh;
   padding: calc(2 * var(--spacing));
-  overflow: scroll;
 }
 
 .projects h2:first-of-type {
   margin-top: 0;
+}
+
+/* Desktop View */
+@media only screen and (min-width: 992px) {
+  .leftSide {
+    height: 100vh;
+
+    transition: width var(--transition-duration-long) ease-in-out;
+  }
+  .leftSide.open {
+    width: 25%;
+  }
+  .leftSide.closed {
+    width: 100%;
+  }
+
+  .rightSide {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    box-shadow: -8px 3px 12px 3px rgba(250, 195, 250, 1);
+    transition: left var(--transition-duration-long) ease-in-out;
+  }
+  .rightSide.open {
+    left: var(--open-width);
+  }
+
+  .rightSide.closed {
+    left: 100%;
+  }
+
+  .projects {
+    height: 100vh;
+    overflow: scroll;
+  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 992px) {
+  .leftSide {
+    height: 40vh;
+  }
+
+  .rightSide {
+    box-shadow: 0 -5px 12px 3px rgba(250, 195, 250, 1);
+  }
+
+  .projectButton {
+    display: none;
+  }
 }
