@@ -221,3 +221,8 @@ span:hover {
     display: none;
   }
 }
+
+.BrainhubCarousel__arrows {
+  background-color: black !important;
+  opacity: 0.5;
+}
