@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { GiVrHeadset, GiValve } from 'react-icons/gi';
-import { FaVrHeadset } from 'react-icons/fa';
+import { GiVrHeadset } from 'react-icons/gi';
 
 import Avatar from './Avatar';
 import Links from '../Links';
@@ -21,8 +20,7 @@ const Profile: React.FC<Props> = ({ onClick }) => {
     <div className="profile">
       <Avatar />
       <span>
-        Filip Kajzer • <GiVrHeadset />
-        <GiValve />
+        Filip Kajzer • <GiVrHeadset />{' '}
       </span>
       <div onClick={handleClick} className={`projectButton ${clicked ? 'clicked' : ''}`}>
         <span>Projects</span>
