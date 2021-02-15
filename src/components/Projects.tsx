@@ -23,24 +23,26 @@ const PROJECTS: Project[] = [
     videos: [
       {
         poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-file.jpg',
-        source: 'http://dl5.webmfiles.org/big-buck-bunny_trailer.webm',
+        source: 'https://www.youtube.com/watch?v=4VpZ6AjulGo',
       },
       {
         poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
-        source: 'http://dl5.webmfiles.org/elephants-dream.webm',
+        source: 'https://www.youtube.com/watch?v=4VpZ6AjulGo',
+      },
+      {
+        poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
+        source: 'https://www.youtube.com/watch?v=4VpZ6AjulGo',
+      },
+      {
+        poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
+        source: 'https://www.youtube.com/watch?v=4VpZ6AjulGo',
       },
     ],
-    technologies: ['Steam VR 2', 'Unity', 'Valve Index'],
+    technologies: ['OpenVR', 'Unity', 'Valve Index'],
   },
   {
-    name: 'Virtual Reality Lab (University project)',
-    description: [
-      'Recreate realistic or abstract interiors',
-      'Navigate and interact with environment by different means of ray casting',
-      'Choose from a set of textures, assets and colors to customize interior',
-      'Move into Sandbox environment and chose which asset to take with you and place freely in room',
-      'Showed that even a VR novice can build a room within ~20 min, experienced users ~5',
-    ],
+    name: '1 Hour Prototype Challenge',
+    description: ['Zombie Wave Game', 'DueDate: 20.2.'],
     videos: [
       {
         poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-file.jpg',
@@ -51,7 +53,7 @@ const PROJECTS: Project[] = [
         source: 'http://dl5.webmfiles.org/elephants-dream.webm',
       },
     ],
-    technologies: ['Steam VR', 'Unity', 'HTC Vive'],
+    technologies: ['Open VR', 'Unity', 'Oculus Quest 2'],
   },
 ];
 
@@ -68,7 +70,7 @@ const Projects: React.FC = () => {
           </ul>
           <Slideshow entries={project.videos} />
 
-          <p style={{ opacity: 0.5 }}>{project.technologies.join(' • ')}</p>
+          <p style={{ opacity: 0.5, textAlign: 'center' }}>{project.technologies.join(' • ')}</p>
         </section>
       ))}
     </div>

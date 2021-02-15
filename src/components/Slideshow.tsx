@@ -20,7 +20,7 @@ const Slideshow: React.FC<Props> = ({ entries }) => {
       <Carousel arrows value={currentSlide} onChange={onChange}>
         {entries.map((entry, index) => (
           <video key={index} poster={entry.poster} controls muted>
-            <source src={entry.source} type="video/webm" /> {/* mp4? */}
+            <source src={entry.source} type="video/mp4" />
           </video>
         ))}
       </Carousel>
