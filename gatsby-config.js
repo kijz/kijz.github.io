@@ -1,8 +1,4 @@
 module.exports = {
-  proxy: {
-    prefix: '/api',
-    url: 'http://dev-mysite.com',
-  },
   siteMetadata: {
     title: '✋Filip Kajzer • M.Sc. 💻 science',
     description: 'Personal website using Gatsby + TypeScript',
