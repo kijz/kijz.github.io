@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
+import YouTube from 'react-youtube';
 
 export interface VideoSource {
-  poster: string;
-  source: string;
+  title: string;
+  videoId: string;
 }
 
 interface Props {
@@ -19,9 +20,7 @@ const Slideshow: React.FC<Props> = ({ entries }) => {
     <>
       <Carousel arrows value={currentSlide} onChange={onChange}>
         {entries.map((entry, index) => (
-          <video key={index} poster={entry.poster} controls muted>
-            <source src={entry.source} type="video/mp4" />
-          </video>
+          <YouTube key={index} videoId={entry.videoId} /> // ts-ignore
         ))}
       </Carousel>
       <Dots value={currentSlide} onChange={onChange} number={entries.length} />

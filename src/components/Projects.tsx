@@ -22,20 +22,20 @@ const PROJECTS: Project[] = [
     ],
     videos: [
       {
-        poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-file.jpg',
-        source: 'https://www.youtube.com/watch?v=4VpZ6AjulGo',
+        title: '1',
+        videoId: 'N1gX0VAoZWs',
       },
       {
-        poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
-        source: 'https://www.youtube.com/watch?v=4VpZ6AjulGo',
+        title: '2',
+        videoId: 'bL7_-8S9mqI',
       },
       {
-        poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
-        source: 'https://www.youtube.com/watch?v=4VpZ6AjulGo',
+        title: '3',
+        videoId: '4VpZ6AjulGo',
       },
       {
-        poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
-        source: 'https://www.youtube.com/watch?v=4VpZ6AjulGo',
+        title: '4',
+        videoId: 'mEpib14ejKo',
       },
     ],
     technologies: ['OpenVR', 'Unity', 'Valve Index'],
@@ -45,12 +45,12 @@ const PROJECTS: Project[] = [
     description: ['Zombie Wave Game', 'DueDate: 20.2.'],
     videos: [
       {
-        poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-file.jpg',
-        source: 'http://dl5.webmfiles.org/big-buck-bunny_trailer.webm',
+        title: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-file.jpg',
+        videoId: '4VpZ6AjulGo',
       },
       {
-        poster: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
-        source: 'http://dl5.webmfiles.org/elephants-dream.webm',
+        title: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
+        videoId: '4VpZ6AjulGo',
       },
     ],
     technologies: ['Open VR', 'Unity', 'Oculus Quest 2'],
