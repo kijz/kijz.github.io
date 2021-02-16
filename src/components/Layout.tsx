@@ -4,11 +4,7 @@ import '../styles/layout.css';
 import '../styles/components.css';
 
 const Layout: React.FC = ({ children }) => {
-  return (
-    <>
-      <main className="content">{children}</main>
-    </>
-  );
+  return <main className="content">{children}</main>;
 };
 
 export default Layout;
