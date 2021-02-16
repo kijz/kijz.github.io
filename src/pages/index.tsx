@@ -29,6 +29,10 @@ const IndexPage: React.FC<Props> = ({ data }) => {
         <title>{data.site.siteMetadata.title}</title>
         <meta name="description" content={data.site.siteMetadata.description} />
         <meta name="author" content={data.site.siteMetadata.author} />
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+        <link rel="manifest" href="/icons/site.webmanifest" />
       </Helmet>
       <Layout>
         <div className={`leftSide ${isOpen ? 'open' : 'closed'}`}>
