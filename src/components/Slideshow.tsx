@@ -20,16 +20,15 @@ const Slideshow: React.FC<Props> = ({ entries }) => {
     <>
       <Carousel arrows value={currentSlide} onChange={onChange}>
         {entries.map((entry, index) => (
-          <>
+          <React.Fragment key={entry.videoId}>
             {currentSlide === index && (
               <YouTube
-                key={entry.videoId}
                 opts={{ playerVars: { modestbranding: 1 } }}
                 containerClassName="youtube"
                 videoId={entry.videoId}
               />
             )}
-          </>
+          </React.Fragment>
         ))}
       </Carousel>
       <Dots value={currentSlide} onChange={onChange} number={entries.length} />

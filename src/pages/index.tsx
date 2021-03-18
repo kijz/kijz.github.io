@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
@@ -20,7 +20,27 @@ interface Props {
 }
 const IndexPage: React.FC<Props> = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleClick = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    if (!isOpen && window.location.hash === '#projects') {
+      setIsOpen(true);
+    }
+
+    if (isOpen && window.location.hash === '') {
+      setIsOpen(false);
+    }
+  }, [window.location.hash]);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+
+    if (window.location.hash === '#projects') {
+      window.location.hash = '';
+      return;
+    }
+
+    window.location.hash = '#projects';
+  };
 
   return (
     <>
@@ -36,7 +56,7 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       </Helmet>
       <Layout>
         <div className={`leftSide ${isOpen ? 'open' : 'closed'}`}>
-          <Profile onClick={handleClick} />
+          <Profile onClick={handleClick} isOpen={isOpen} />
         </div>
 
         <div className={`rightSide ${isOpen ? 'open' : 'closed'}`}>

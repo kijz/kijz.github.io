@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BiAtom } from 'react-icons/bi';
 
 import Avatar from './Avatar';
@@ -7,22 +7,17 @@ import Footer from './Footer';
 
 interface Props {
   onClick: () => void;
+  isOpen: boolean;
 }
 
-const Profile: React.FC<Props> = ({ onClick }) => {
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
-    setClicked(!clicked);
-    onClick();
-  };
-
+const Profile: React.FC<Props> = ({ isOpen, onClick }) => {
   return (
     <div className="profile">
       <Avatar />
       <span style={{ display: 'flex', alignItems: 'center' }}>
         Filip Kajzer • <BiAtom />
       </span>
-      <div onClick={handleClick} className={`projectButton ${clicked ? 'clicked' : ''}`}>
+      <div onClick={onClick} className={`projectButton ${isOpen ? 'clicked' : ''}`}>
         <span>Projects</span>
       </div>
       <Links />
