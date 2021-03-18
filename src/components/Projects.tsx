@@ -46,11 +46,11 @@ const PROJECTS: Project[] = [
     videos: [
       {
         title: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-file.jpg',
-        videoId: '4VpZ6AjulGo',
+        videoId: '4SpZ6AjulGo',
       },
       {
         title: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
-        videoId: '4VpZ6AjulGo',
+        videoId: '4XpZ6AjulGo',
       },
     ],
     technologies: ['Open VR', 'Unity', 'Oculus Quest 2'],

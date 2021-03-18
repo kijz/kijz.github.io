@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GiVrHeadset } from 'react-icons/gi';
+import { BiAtom } from 'react-icons/bi';
 
 import Avatar from './Avatar';
 import Links from '../Links';
@@ -19,8 +19,8 @@ const Profile: React.FC<Props> = ({ onClick }) => {
   return (
     <div className="profile">
       <Avatar />
-      <span>
-        Filip Kajzer • <GiVrHeadset />{' '}
+      <span style={{ display: 'flex', alignItems: 'center' }}>
+        Filip Kajzer • <BiAtom />
       </span>
       <div onClick={handleClick} className={`projectButton ${clicked ? 'clicked' : ''}`}>
         <span>Projects</span>

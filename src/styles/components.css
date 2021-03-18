@@ -48,6 +48,7 @@
   font-size: 30px;
   cursor: pointer;
 }
+
 .high-five p {
   margin: calc(var(--spacing) / 3) 0;
   font-size: 14px;
@@ -173,56 +174,73 @@ span:hover {
 }
 
 /* Desktop View */
-@media only screen and (min-width: 992px) {
-  .leftSide {
-    height: 100vh;
+.leftSide {
+  height: 100vh;
 
-    transition: width var(--transition-duration-long) ease-in-out;
-  }
-  .leftSide.open {
-    width: 25%;
-  }
-  .leftSide.closed {
-    width: 100%;
-  }
+  transition: width var(--transition-duration-long) ease-in-out;
+}
 
-  .rightSide {
-    width: 75%;
-    position: absolute;
-    top: 0;
-    box-shadow: -8px 3px 12px 3px rgba(250, 195, 250, 1);
-    transition: left var(--transition-duration-long) ease-in-out;
-  }
-  .rightSide.open {
-    left: var(--open-width);
-  }
+.leftSide.open {
+  width: 25%;
+}
 
-  .rightSide.closed {
-    left: 100%;
-  }
+.leftSide.closed {
+  width: 100%;
+}
 
-  .projects {
-    height: 100vh;
-    overflow-y: scroll;
-  }
+.rightSide {
+  background-color: white;
+  z-index: 1;
+  width: 75%;
+  position: absolute;
+  top: 0;
+  box-shadow: -8px 3px 12px 3px rgba(250, 195, 250, 1);
+  transition: left var(--transition-duration-long) ease-in-out;
+}
+
+.rightSide.open {
+  left: var(--open-width);
+}
+
+.rightSide.closed {
+  left: 100%;
+}
+
+.projects {
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 /* Mobile View */
 @media only screen and (max-width: 992px) {
-  .leftSide {
-    height: 40vh;
+  .rightSide.open {
+    position: fixed;
+    left: 0;
   }
 
   .rightSide {
-    box-shadow: 0 -5px 12px 3px rgba(250, 195, 250, 1);
-  }
-
-  .projectButton {
-    display: none;
+    width: 100%;
   }
 }
 
 .BrainhubCarousel__arrows {
   background-color: black !important;
   opacity: 0.5;
+}
+
+.youtube {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
