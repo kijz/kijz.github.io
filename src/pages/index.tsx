@@ -21,16 +21,6 @@ interface Props {
 const IndexPage: React.FC<Props> = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    if (!isOpen && window.location.hash === '#projects') {
-      setIsOpen(true);
-    }
-
-    if (isOpen && window.location.hash === '') {
-      setIsOpen(false);
-    }
-  }, [window.location.hash]);
-
   const handleClick = () => {
     setIsOpen(!isOpen);
 
