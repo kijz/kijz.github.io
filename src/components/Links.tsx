@@ -1,6 +1,7 @@
 import React from 'react';
 import { GoMail, GoMarkGithub } from 'react-icons/go';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { IoLogoGameControllerA } from 'react-icons/io';
 
 interface Props {
   href: string;
@@ -25,6 +26,10 @@ const Links: React.FC = () => {
 
       <IconLink href="mailto:filipkajzer@gmail.com">
         <GoMail style={{ width: '22px', height: '22px' }} />
+      </IconLink>
+
+      <IconLink href="https://kjz.itch.io">
+        <IoLogoGameControllerA style={{ width: '22px', height: '22px' }} />
       </IconLink>
     </div>
   );

@@ -41,19 +41,45 @@ const PROJECTS: Project[] = [
     technologies: ['OpenVR', 'Unity', 'Valve Index'],
   },
   {
-    name: '1 Hour Prototype Challenge',
-    description: ['Zombie Wave Game', 'DueDate: 20.2.'],
+    name: 'Realistic Cutting By Cutting Through Fruits!',
+    description: [
+      'Fruit Ninjaesque Game',
+      'Experimenting with Mesh Cutting in the Virtual OT resulting in a (more) fun application!',
+      'Emphasized ease of use, simplicity',
+      'Video captured on Oculus Quest 2',
+    ],
     videos: [
       {
-        title: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-file.jpg',
-        videoId: '4SpZ6AjulGo',
+        title: '1',
+        videoId: 'GNq_oEOykuI',
       },
       {
-        title: 'https://www.webmfiles.org/wp-content/uploads/2010/05/webm-files.jpg',
-        videoId: '4XpZ6AjulGo',
+        title: '2',
+        videoId: 'nZTmeLzd_MY',
       },
     ],
-    technologies: ['Open VR', 'Unity', 'Oculus Quest 2'],
+    technologies: ['UX', 'Mesh Cutting', 'Simplicity'],
+  },
+  {
+    name: 'Zombie Shooter',
+    description: [
+      'Dark / glooming zombie shooter',
+      'Emphasized on atmosphere, "zombie" ambience through fog and postprocessing',
+      'Dismember system for zombies arms',
+      'On zombie death (Head or Leg dismembered), activate ragdoll',
+      'Video captured on Oculus Quest 2',
+    ],
+    videos: [
+      {
+        title: '1',
+        videoId: 'TnMEiUp3itc',
+      },
+      {
+        title: '2',
+        videoId: 'FU4Ahk_vcDs',
+      },
+    ],
+    technologies: ['Atmosphere', 'Postprocessing', 'Ambience'],
   },
 ];
 
