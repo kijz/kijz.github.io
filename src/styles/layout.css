@@ -2,3 +2,18 @@ a {
   color: initial;
   background-image: none;
 }
+
+body {
+  overflow: hidden;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 50px;
+  border: 0px solid;
+}

@@ -1,6 +1,6 @@
 :root {
   --transition-duration-default: 300ms;
-  --transition-duration-long: 500ms;
+  --transition-duration-long: 700ms;
   --spacing: 1.45rem;
 
   --mobile-breakpoint: 992px;
@@ -45,17 +45,28 @@
   margin: calc(var(--spacing)) 0;
   text-align: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 35px;
   cursor: pointer;
+
+  opacity: 0.6;
+
+  transition-property: transform, opacity;
+  transition-duration: var(--transition-duration-default);
+  transition-timing-function: ease-out;
+}
+
+.high-five:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .high-five p {
   margin: calc(var(--spacing) / 3) 0;
-  font-size: 14px;
-  font-weight: 20;
+  font-size: 16px;
+  font-weight: 50;
   text-align: center;
   justify-content: center;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .projectButton {
@@ -133,13 +144,12 @@ span {
   opacity: 0.5;
 
   transition-property: transform, opacity;
-  transition-duration: var(--transition-duration-default);
+  transition-duration: var(--transition-duration-long);
   transition-timing-function: ease-out;
 }
 
 span:hover {
-  transform: scale(1.1);
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .iconLink {
@@ -194,7 +204,7 @@ span:hover {
   width: 75%;
   position: absolute;
   top: 0;
-  box-shadow: -8px 3px 12px 3px rgba(250, 195, 250, 1);
+  box-shadow: -8px 3px 12px 3px rgb(253, 213, 253);
   transition: left var(--transition-duration-long) ease-in-out;
 }
 

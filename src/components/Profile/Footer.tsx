@@ -128,7 +128,10 @@ const Footer: React.FC = () => {
 
   return (
     <div className="high-five" ref={ref} onClick={onClick}>
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} /> <br />✋
+      <span>
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      </span>
+      ✋
       <p>
         Thanks for reading. <br /> High five!
       </p>
