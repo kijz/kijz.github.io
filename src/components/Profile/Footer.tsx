@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
       <span>
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       </span>
-      ✋
+      <br />✋
       <p>
         Thanks for reading. <br /> High five!
       </p>
