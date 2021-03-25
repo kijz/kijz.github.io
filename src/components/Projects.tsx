@@ -17,69 +17,70 @@ const PROJECTS: Project[] = [
       'Use only natural hand gestures like grabbing and pointing for usability',
       'Most common procedures can be played out on visualized medical imaging of patients',
       'Ability to save planned procedures and view / share them',
-      'In a collaboration with a fellow graduate student, planned procedures can be viewed while operating in Augmented Reality',
+      'Planned procedures can be viewed while operating in Augmented Reality',
       'Reduced time and strain on surgeons in the preparation phase for surgery',
     ],
     videos: [
       {
-        title: '1',
+        title: 'Virtual Patient Overview',
+        videoId: 'mEpib14ejKo',
+      },
+      {
+        title: 'Procedure Planning Demonstration',
         videoId: 'N1gX0VAoZWs',
       },
       {
-        title: '2',
+        title: 'Training Planned Procedure Demonstration',
         videoId: 'bL7_-8S9mqI',
       },
       {
-        title: '3',
+        title: 'Visualization Tools Demonstration',
         videoId: '4VpZ6AjulGo',
       },
-      {
-        title: '4',
-        videoId: 'mEpib14ejKo',
-      },
     ],
-    technologies: ['OpenVR', 'Unity', 'Valve Index'],
+    technologies: [
+      'Human Computer Interaction',
+      'User Interface Design',
+      'SteamVR',
+      'Unity',
+      'Valve Index',
+    ],
   },
   {
-    name: 'Realistic Cutting By Cutting Through Fruits!',
+    name: 'MeshCut VR',
     description: [
-      'Fruit Ninjaesque Game',
-      'Experimenting with Mesh Cutting in the Virtual OT resulting in a (more) fun application!',
-      'Emphasized ease of use, simplicity',
+      'Realistic cutting of objects via mesh manipulation',
+      'Applied experimention from the Virtual Operating Theatre resulting in a more fun application',
+      'Emphasized ease of use and simplicity',
       'Video captured on Oculus Quest 2',
     ],
     videos: [
       {
-        title: '1',
+        title: 'Lets Play',
         videoId: 'GNq_oEOykuI',
       },
       {
-        title: '2',
+        title: 'Increasing Difficulty!',
         videoId: 'nZTmeLzd_MY',
       },
     ],
-    technologies: ['UX', 'Mesh Cutting', 'Simplicity'],
+    technologies: ['Mesh Cutting', 'Simplicity', 'OpenXR', 'Unity', 'Cross-platform'],
   },
   {
-    name: 'Zombie Shooter',
+    name: 'Zombie VR',
     description: [
-      'Dark / glooming zombie shooter',
-      'Emphasized on atmosphere, "zombie" ambience through fog and postprocessing',
-      'Dismember system for zombies arms',
-      'On zombie death (Head or Leg dismembered), activate ragdoll',
+      'Dark and gloomy zombie shooter',
+      'Emphasize on atmosphere and "zombie ambience" through fog, postprocessing, and sound effects',
+      'Dismember system with ragdoll physics for zombies arms',
       'Video captured on Oculus Quest 2',
     ],
     videos: [
       {
-        title: '1',
+        title: 'Lets Play',
         videoId: 'TnMEiUp3itc',
       },
-      {
-        title: '2',
-        videoId: 'FU4Ahk_vcDs',
-      },
     ],
-    technologies: ['Atmosphere', 'Postprocessing', 'Ambience'],
+    technologies: ['Postprocessing', 'Atmosphere', 'OpenXR', 'Unity'],
   },
 ];
 
@@ -96,7 +97,14 @@ const Projects: React.FC = () => {
           </ul>
           <Slideshow entries={project.videos} />
 
-          <p style={{ opacity: 0.5, textAlign: 'center' }}>{project.technologies.join(' • ')}</p>
+          <p className="keywords">
+            {project.technologies.map((tech, index) => (
+              <>
+                <span style={{ display: 'inline-block', fontSize: '16px' }}>{tech}</span>
+                {index < project.technologies.length - 1 && ' • '}
+              </>
+            ))}
+          </p>
         </section>
       ))}
     </div>
