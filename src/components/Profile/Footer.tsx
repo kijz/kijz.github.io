@@ -131,9 +131,12 @@ const Footer: React.FC = () => {
       <span>
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       </span>
-      <br />✋
+      <br />
+      <span style={{ userSelect: 'none' }}>✋</span>
       <p>
-        Thanks for reading. <br /> High five!
+        Thanks for reading.
+        <br />
+        High five!
       </p>
     </div>
   );

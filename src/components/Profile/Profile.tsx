@@ -15,7 +15,7 @@ const Profile: React.FC<Props> = ({ isOpen, onClick }) => {
     <div className="profile">
       <Avatar />
       <span style={{ display: 'flex', alignItems: 'center' }}>
-        Filip Kajzer • <BiAtom />
+        Filip Kajzer • <BiAtom style={{ height: '23px', width: '23px', marginLeft: '4px' }} />
       </span>
       <div onClick={onClick} className={`projectButton ${isOpen ? 'clicked' : ''}`}>
         <span>Projects</span>
