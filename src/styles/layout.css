@@ -3,7 +3,8 @@ a {
   background-image: none;
 }
 
-html {
+html,
+body {
   overflow: hidden;
 }
 
