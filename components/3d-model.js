@@ -58,7 +58,7 @@ const Model = () => {
 
       // 640 -> 240
       // 8 -> 6
-      const scale = scH * 0.00005 + 1.8;
+      const scale = scH * 0.00005 + 1;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -79,9 +79,11 @@ const Model = () => {
       controls.target = target;
       controls.minZoom = 0.5;
       controls.maxZoom = 2;
+      controls.minPolarAngle = 0.25;
+      controls.maxPolarAngle = 1.5;
       setControls(controls);
 
-      loadGLTFModel(scene, "/mt_inari_statue.glb", {
+      loadGLTFModel(scene, "/model/mt_inari_statue.glb", {
         receiveShadows: false,
         castShadow: false,
       }).then(() => {
