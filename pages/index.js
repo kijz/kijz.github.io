@@ -24,6 +24,7 @@ import {
   IoLogoDiscord,
   IoLogoGithub,
   IoLogoTwitter,
+  IoLogoLinkedin,
 } from "react-icons/io5";
 
 const Page = () => {
@@ -194,6 +195,17 @@ const Page = () => {
                   leftIcon={<Icon as={IoGameControllerSharp} />}
                 >
                   @kjz -- itch.io
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/filip-kajzer-a65574140/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  @Filip Kajzer
                 </Button>
               </Link>
             </ListItem>
