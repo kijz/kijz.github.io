@@ -1,0 +1,70 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/i-RtVRiTzmMLDlUt6H06-/_buildManifest.js",
+    "static/i-RtVRiTzmMLDlUt6H06-/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-9b0e45c24ba97727.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-c354a30bda3d62a6.js",
+      "static/chunks/ae51ba48-e876c1f1c1e5d83c.js",
+      "static/chunks/pages/index-0d47ee999c792b3f.js"
+    ],
+    "/404": [
+      "static/chunks/webpack-9b0e45c24ba97727.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-c354a30bda3d62a6.js",
+      "static/chunks/pages/404-5e6cfde833734d97.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-9b0e45c24ba97727.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-c354a30bda3d62a6.js",
+      "static/chunks/pages/_app-1bf57dd07cefcd01.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-9b0e45c24ba97727.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-c354a30bda3d62a6.js",
+      "static/chunks/pages/_error-a4ba2246ff8fb532.js"
+    ],
+    "/posts": [
+      "static/chunks/webpack-9b0e45c24ba97727.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-c354a30bda3d62a6.js",
+      "static/chunks/pages/posts-0939533687c7a636.js"
+    ],
+    "/projects": [
+      "static/chunks/webpack-9b0e45c24ba97727.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-c354a30bda3d62a6.js",
+      "static/chunks/pages/projects-29de3350ccd8d4d7.js"
+    ],
+    "/projects/mesh-cut": [
+      "static/chunks/webpack-9b0e45c24ba97727.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-c354a30bda3d62a6.js",
+      "static/chunks/pages/projects/mesh-cut-eeb88b32be438d56.js"
+    ],
+    "/projects/virtual-operating-theatre": [
+      "static/chunks/webpack-9b0e45c24ba97727.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-c354a30bda3d62a6.js",
+      "static/chunks/pages/projects/virtual-operating-theatre-9bb7c15922dc44ab.js"
+    ],
+    "/projects/zombie-shooter": [
+      "static/chunks/webpack-9b0e45c24ba97727.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-c354a30bda3d62a6.js",
+      "static/chunks/pages/projects/zombie-shooter-f91031246103ac2a.js"
+    ]
+  },
+  "ampFirstPages": []
+}
