@@ -1,5 +1,5 @@
-import { Badge, Container, Link, List, ListItem } from "@chakra-ui/react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Badge, Container, List, ListItem } from "@chakra-ui/react";
+// import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Meta,
   ProjectImage,

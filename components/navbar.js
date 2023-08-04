@@ -13,7 +13,6 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
-  useColorMode
 } from '@chakra-ui/react'
 
 import { ExternalLinkIcon, HamburgerIcon } from '@chakra-ui/icons'
