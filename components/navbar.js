@@ -16,7 +16,7 @@ import {
   useColorMode
 } from '@chakra-ui/react'
 
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { ExternalLinkIcon, HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, children }) => {
@@ -75,8 +75,8 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem path={path} href="/works">
-            Works
+          <LinkItem path={path} href="/projects">
+            Projects
           </LinkItem>
           <LinkItem path={path} href="/posts">
             Posts
@@ -97,15 +97,15 @@ const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                <NextLink href="/projects" passHref>
+                  <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href="www.github.com/fkajzer.github.io">
-                  <MenuItem as={Link}>View Source</MenuItem>
-                </NextLink>
+                <Link href="https://github.com/fkajzer/fkajzer.github.io">
+                  <MenuItem>View Source&nbsp;<ExternalLinkIcon /></MenuItem>
+                </Link>
               </MenuList>
             </Menu>
           </Box>

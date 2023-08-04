@@ -70,12 +70,14 @@ const VoxelModel = () => {
       camera.lookAt(target);
       setCamera(camera);
 
-      const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+      const ambientLight = new THREE.AmbientLight(0xffffff, 2);
       scene.add(ambientLight);
 
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.autoRotate = true;
       controls.target = target;
+      controls.minZoom = 0.5;
+      controls.maxZoom = 2;
       setControls(controls);
 
       loadGLTFModel(scene, "/dog.glb", {
@@ -131,11 +133,10 @@ const VoxelModel = () => {
       ref={refContainer}
       className="voxel-model"
       mx="auto"
-      at={["-20px", "-60px", "-120px"]}
-      mt={["-50px", "-80px", "-100px"]}
-      mb={["-50px", "-80px", "-100px"]}
-      w={[220, 440, 640]}
-      h={[220, 440, 640]}
+      mt={["-40px", "-140px", "-200px"]}
+      mb={["-40px", "-140px", "-200px"]}
+      w={[220, 480, 640]}
+      h={[220, 480, 640]}
       position="relative"
     >
       {loading && (

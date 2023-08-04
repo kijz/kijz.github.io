@@ -7,7 +7,7 @@ import {
   Link,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import { ChevronRightIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 
 import Layout from "../components/layouts/article";
@@ -34,7 +34,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Filip Kajzer
             </Heading>
-            <p>Unity Developer</p>
+            <p>Professional Unity Developer, Hobby Godot enjoyer 🤖</p>
           </Box>
           <Box
             flexShrink={0}
@@ -60,15 +60,29 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Filip ist so toll wow. <br />
-            <NextLink href="/works/master-thesis">
+            - Currently working on the next level of putting&nbsp;
+            <Link href="https://www.puttview.com/">
+              @PuttView <ExternalLinkIcon mx="2px" />
+            </Link>
+            .<br />
+          </Paragraph>
+          <Paragraph>
+            - Learning&nbsp;
+            <Link href="https://godotengine.org/">
+              Godot&nbsp;<ExternalLinkIcon mx="2px" />
+            </Link>
+            .<br />
+          </Paragraph>
+          <Paragraph>
+            - Most interesting solo project&nbsp;
+            <NextLink href="/projects/virtual-operating-theatre">
               <Link>Virtual Operating Theatre</Link>
             </NextLink>
             .
           </Paragraph>
 
           <Box align="center" my={4}>
-            <NextLink href="/works">
+            <NextLink href="/projects">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 Portfolio
               </Button>
@@ -81,21 +95,30 @@ const Page = () => {
             Bio
           </Heading>
           <BioSection>
-            <BioYear>1993</BioYear>
-            Born in Haan, Germany.
+            <BioYear>Dec 2022</BioYear>
+            Started working as a Unity Developer at ViewLicity GmbH.
           </BioSection>
           <BioSection>
-            <BioYear>2016</BioYear>
-            Started working as a Web Developer at eSagu GmbH.
+            <BioYear>Jun 2021</BioYear>
+            Started working as a Unity Developer at antwerpes AG.
           </BioSection>
           <BioSection>
-            <BioYear>2019</BioYear>
+            <BioYear>Oct 2020</BioYear>
             Completed the Master&apos;s Program of Information Science at
             RWTH-Aachen University.
           </BioSection>
           <BioSection>
-            <BioYear>2021</BioYear>
-            Started working as a Unity Developer at antwerpes AG.
+            <BioYear>Oct 2017</BioYear>
+            Completed the Bachelor&apos;s Program of Information Science at
+            HHU Düsseldorf.
+          </BioSection>
+          <BioSection>
+            <BioYear>Jul 2016</BioYear>
+            Started working as a Web Developer at eSagu GmbH.
+          </BioSection>
+          <BioSection>
+            <BioYear>Feb 1993</BioYear>
+            Born in Haan, Germany.
           </BioSection>
         </Section>
         <Section delay={0.3}>
@@ -105,7 +128,7 @@ const Page = () => {
           <Paragraph>
             Art, Music,{"  "}
             <Link href="https://kjz.itch.io">
-              GameDev
+              GameDev&nbsp;<ExternalLinkIcon mx="2px" />
             </Link>
             , Virtual Reality, Machine Learning
           </Paragraph>
