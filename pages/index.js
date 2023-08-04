@@ -3,8 +3,12 @@ import {
   Button,
   Container,
   Heading,
+  Icon,
   Image,
   Link,
+  List,
+  ListItem,
+  SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ChevronRightIcon, ExternalLinkIcon } from "@chakra-ui/icons";
@@ -14,6 +18,13 @@ import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
+import { GridItem } from "../components/grid-item";
+import {
+  IoLogoDiscord,
+  IoGameControllerSharp,
+  IoLogoGithub,
+  IoLogoTwitter,
+} from "react-icons/io5";
 
 const Page = () => {
   return (
@@ -112,8 +123,8 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>Oct 2017</BioYear>
-            Completed the Bachelor&apos;s Program of Information Science at
-            HHU Düsseldorf.
+            Completed the Bachelor&apos;s Program of Information Science at HHU
+            Düsseldorf.
           </BioSection>
           <BioSection>
             <BioYear>Jul 2016</BioYear>
@@ -135,6 +146,58 @@ const Page = () => {
             </Link>
             , Virtual Reality, Machine Learning
           </Paragraph>
+        </Section>
+
+        <Section delay={0.5}>
+          <Heading as="h3" variant="section-title">
+            Socials
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/fkajzer" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @fkajzer
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/_okayzer" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @_okayzer
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://discord.gg/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoDiscord} />}
+                >
+                  @drkeule
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://kjz.itch.io" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoGameControllerSharp} />}
+                >
+                  @kjz -- itch.io
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
