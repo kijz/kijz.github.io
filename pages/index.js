@@ -60,7 +60,7 @@ const Page = () => {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/nextjs-github-pages/images/profile.jpeg"
+              src="/images/profile.jpeg"
               alt="Profile Image"
             />
           </Box>

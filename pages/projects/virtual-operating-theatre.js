@@ -58,7 +58,7 @@ const Project = () => {
           </ListItem>
           <ListItem mt={8}>
             <ProjectImage
-              src="/nextjs-github-pages/images/projects/virtual_operating_theatre_01.png"
+              src="/images/projects/virtual_operating_theatre_01.png"
               alt="Virtual Operating Theatre"
             />
           </ListItem>
