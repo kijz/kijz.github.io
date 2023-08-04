@@ -11,6 +11,7 @@ function easeOutCirc(x) {
 
 const VoxelModel = () => {
   const refContainer = useRef();
+  const refMounted = useRef(false);
   const [loading, setLoading] = useState(true);
   const [renderer, setRenderer] = useState();
   const [_camera, setCamera] = useState();
@@ -36,9 +37,11 @@ const VoxelModel = () => {
   });
 
   useEffect(() => {
-    console.log("useEffect fired");
     const { current: container } = refContainer;
-    if (container && !renderer) {
+    const { current: isMounted } = refMounted;
+
+    if (container && !renderer && !isMounted) {
+      refMounted.current = true;
       const scW = container.clientWidth;
       const scH = container.clientHeight;
 
@@ -114,7 +117,7 @@ const VoxelModel = () => {
         renderer.dispose();
       };
     }
-  }, [initialCameraPosition]);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
