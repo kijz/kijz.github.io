@@ -40,7 +40,7 @@ const Project = () => {
           </ListItem>
           <ListItem mt={8}>
             <ProjectImage
-              src="/images/projects/mesh_cut_02.png"
+              src="/nextjs-github-pages/images/projects/mesh_cut_02.png"
               alt="Mesh Cut VR Starting Screen"
             />
           </ListItem>
