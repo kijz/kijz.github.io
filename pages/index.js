@@ -20,8 +20,8 @@ import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 import { GridItem } from "../components/grid-item";
 import {
-  IoLogoDiscord,
   IoGameControllerSharp,
+  IoLogoDiscord,
   IoLogoGithub,
   IoLogoTwitter,
 } from "react-icons/io5";
@@ -198,6 +198,20 @@ const Page = () => {
               </Link>
             </ListItem>
           </List>
+          {
+            // <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            //   <GridItem
+            //     href="https://www.youtube.com/okayzer"
+            //     title="Okayzer - GameDev"
+            //     thumbnail={thumbnailYouTube}
+            //   />
+            //   <GridItem
+            //     href="https://www.youtube.com/okayzer"
+            //     title="Okayzer - GameDev"
+            //     thumbnail={thumbnailYouTube}
+            //   />
+            // </SimpleGrid>
+          }
         </Section>
       </Container>
     </Layout>
