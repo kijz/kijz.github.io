@@ -1,4 +1,4 @@
-import { useCallBack, useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Box, Spinner } from "@chakra-ui/react";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -9,17 +9,17 @@ function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
 }
 
-const VoxelModel = () => {
+const Model = () => {
   const refContainer = useRef();
   const refMounted = useRef(false);
   const [loading, setLoading] = useState(true);
   const [renderer, setRenderer] = useState();
   const [_camera, setCamera] = useState();
-  const [target] = useState(new THREE.Vector3(0, 2.2, 0));
+  const [target] = useState(new THREE.Vector3(0, 0.4, 0));
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       20 * Math.sin(0.2 * Math.PI),
-      8,
+      10,
       20 * Math.cos(0.2 * Math.PI),
     ),
   );
@@ -57,7 +57,7 @@ const VoxelModel = () => {
 
       // 640 -> 240
       // 8 -> 6
-      const scale = scH * 0.005 + 4.8;
+      const scale = scH * 0.00005 + 1.8;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -80,7 +80,7 @@ const VoxelModel = () => {
       controls.maxZoom = 2;
       setControls(controls);
 
-      loadGLTFModel(scene, "/dog.glb", {
+      loadGLTFModel(scene, "/mt_inari_statue.glb", {
         receiveShadows: false,
         castShadow: false,
       }).then(() => {
@@ -153,4 +153,4 @@ const VoxelModel = () => {
   );
 };
 
-export default VoxelModel;
+export default Model;
