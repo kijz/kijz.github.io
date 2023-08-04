@@ -4,10 +4,9 @@ import { ProjectGridItem } from "../components/grid-item";
 import Section from "../components/section";
 import Layout from "../components/layouts/article";
 
-import thumbOperatingTheatre from "../public/images/profile.jpeg";
-import thumbMesh from "../public/images/profile.jpeg";
-
-import thumbZombie from "../public/images/profile.jpeg";
+import thumbOperatingTheatre from "../public/images/projects/virtual_operating_theatre_01.png";
+import thumbMesh from "../public/images/projects/mesh_cut_01.png";
+import thumbZombie from "../public/images/projects/zombie_01.png";
 
 const Projects = () => {
   return (

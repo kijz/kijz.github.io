@@ -67,6 +67,9 @@ const Page = () => {
             .<br />
           </Paragraph>
           <Paragraph>
+            - Waiting for Apple Vision Pro release 🥽.<br />
+          </Paragraph>
+          <Paragraph>
             - Learning&nbsp;
             <Link href="https://godotengine.org/">
               Godot&nbsp;<ExternalLinkIcon mx="2px" />

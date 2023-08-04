@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Badge, Box, Heading, Image, Link } from "@chakra-ui/react";
+import { AspectRatio, Badge, Box, Heading, Image, Link } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 export const Title = ({ children }) => (
@@ -29,4 +29,14 @@ export const Meta = ({ children }) => (
   <Badge colorScheme="green" mr={2}>
     {children}
   </Badge>
+);
+
+export const ProjectYoutube = ({ embedId }) => (
+  <AspectRatio borderRadius="lg" maxW="full" ratio={1}>
+    <iframe
+      title={`video-${embedId}`}
+      src={`https://www.youtube.com/embed/${embedId}`}
+      allowFullScreen
+    />
+  </AspectRatio>
 );
