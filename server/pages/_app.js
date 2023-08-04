@@ -70,7 +70,7 @@ const Model = ()=>{
             setRenderer(renderer1);
             // 640 -> 240
             // 8 -> 6
-            const scale = scH * 0.00005 + 1.8;
+            const scale = scH * 0.00005 + 1;
             const camera = new three__WEBPACK_IMPORTED_MODULE_3__.OrthographicCamera(-scale, scale, scale, -scale, 0.01, 50000);
             camera.position.copy(initialCameraPosition);
             camera.lookAt(target);
@@ -82,8 +82,10 @@ const Model = ()=>{
             controls.target = target;
             controls.minZoom = 0.5;
             controls.maxZoom = 2;
+            controls.minPolarAngle = 0.25;
+            controls.maxPolarAngle = 1.5;
             setControls(controls);
-            (0,_lib_model__WEBPACK_IMPORTED_MODULE_5__/* .loadGLTFModel */ .D)(scene, "/mt_inari_statue.glb", {
+            (0,_lib_model__WEBPACK_IMPORTED_MODULE_5__/* .loadGLTFModel */ .D)(scene, "/model/mt_inari_statue.glb", {
                 receiveShadows: false,
                 castShadow: false
             }).then(()=>{
