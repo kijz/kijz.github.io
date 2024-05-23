@@ -155,24 +155,24 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link href="https://github.com/fkajzer" target="_blank">
+              <Link href="https://github.com/kijz" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
-                  @fkajzer
+                  @kijz
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://twitter.com/_okayzer" target="_blank">
+              <Link href="https://x.com/kijz__" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoTwitter} />}
                 >
-                  @_okayzer
+                  @kijz__
                 </Button>
               </Link>
             </ListItem>
@@ -188,13 +188,13 @@ const Page = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://kjz.itch.io" target="_blank">
+              <Link href="https://kijz.itch.io" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoGameControllerSharp} />}
                 >
-                  @kjz -- itch.io
+                  @kijz -- itch.io
                 </Button>
               </Link>
             </ListItem>
