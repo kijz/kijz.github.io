@@ -56,12 +56,12 @@ const Page = () => {
           >
             <Image
               borderColor="whiteAlpha.800"
-              borderWidth={4}
+              borderWidth={1}
               borderStyle="solid"
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/profile.jpeg"
+              src="/images/profile_2.jpeg"
               alt="Profile Image"
             />
           </Box>
@@ -71,32 +71,42 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          <Paragraph>
-            - Currently working on the next level of putting&nbsp;
-            <Link href="https://www.puttview.com/">
-              @PuttView <ExternalLinkIcon mx="2px" />
-            </Link>
-            .<br />
-          </Paragraph>
-          <Paragraph>
-            - Waiting for Apple Vision Pro release 🥽.<br />
-          </Paragraph>
-          <Paragraph>
-            - Learning&nbsp;
-            <Link href="https://godotengine.org/">
-              Godot&nbsp;<ExternalLinkIcon mx="2px" />
-            </Link>
-            .<br />
-          </Paragraph>
-          <Paragraph>
-            - Most interesting solo project&nbsp;
-            <NextLink href="/projects/virtual-operating-theatre">
-              <Link>Virtual Operating Theatre</Link>
-            </NextLink>
-            .
-          </Paragraph>
+          <List spacing={3} mt={2}>
+            <ListItem>
+              ⚙️ Currently building next-gen golf training experiences at{" "}
+              <Link href="https://www.puttview.com/" isExternal>
+                PuttView <ExternalLinkIcon mx="2px" />
+              </Link>
+              , including refactoring and expanding <strong>PuttView X</strong>,
+              real-time ball tracking (YOLO + CUDA/TensorRT), and optimized physics systems.
+            </ListItem>
+            <ListItem>
+              ⚡ Pushing the limits of <strong>GPU programming</strong>: CUDA + Metal
+              compute shaders, ray tracing explorations, and high-performance inference stacks
+              (100+ FPS tracking on RTX 3080).
+            </ListItem>
+            <ListItem>
+              🥽 Experimenting with <strong>Apple Vision Pro development</strong> using
+              Xcode, ARKit, and RealityKit — focusing on highly optimized algorithms
+              and fast-running Metal shaders for immersive AR applications.
+            </ListItem>
+            <ListItem>
+              🎮 Exploring{" "}
+              <Link href="https://godotengine.org/" isExternal>
+                Godot <ExternalLinkIcon mx="2px" />
+              </Link>{" "}
+              as a hobby engine while keeping Unity as my main professional tool.
+            </ListItem>
+            <ListItem>
+              🛠 Favorite solo project:{" "}
+              <NextLink href="/projects/virtual-operating-theatre">
+                <Link>Virtual Operating Theatre</Link>
+              </NextLink>
+              , a VR planning tool for surgeons.
+            </ListItem>
+          </List>
 
-          <Box align="center" my={4}>
+          <Box align="center" my={6}>
             <NextLink href="/projects">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 Portfolio
@@ -145,7 +155,7 @@ const Page = () => {
             <Link href="https://kjz.itch.io">
               GameDev&nbsp;<ExternalLinkIcon mx="2px" />
             </Link>
-            , Virtual Reality, Machine Learning
+            , Augmented and Virutal Reality, Machine Learning
           </Paragraph>
         </Section>
 
@@ -166,13 +176,13 @@ const Page = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://x.com/kijz__" target="_blank">
+              <Link href="https://x.com/kijzYAP" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoTwitter} />}
                 >
-                  @kijz__
+                  @kijzYAP
                 </Button>
               </Link>
             </ListItem>

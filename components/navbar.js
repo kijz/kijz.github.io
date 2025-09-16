@@ -77,9 +77,6 @@ const Navbar = props => {
           <LinkItem path={path} href="/projects">
             Projects
           </LinkItem>
-          <LinkItem path={path} href="/posts">
-            Posts
-          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
@@ -98,9 +95,6 @@ const Navbar = props => {
                 </NextLink>
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
                 <Link href="https://github.com/kijz/kijz.github.io">
                   <MenuItem>View Source&nbsp;<ExternalLinkIcon /></MenuItem>
