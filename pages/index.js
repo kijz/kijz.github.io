@@ -87,7 +87,7 @@ const Page = () => {
             </ListItem>
             <ListItem>
               🥽 Experimenting with <strong>Apple Vision Pro development</strong> using
-              Xcode, ARKit, and RealityKit — focusing on highly optimized algorithms
+              Xcode, ARKit, and RealityKit. Focusing on highly optimized algorithms
               and fast-running Metal shaders for immersive AR applications.
             </ListItem>
             <ListItem>
@@ -109,7 +109,7 @@ const Page = () => {
           <Box align="center" my={6}>
             <NextLink href="/projects">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                Portfolio
+                Showcase
               </Button>
             </NextLink>
           </Box>
@@ -121,11 +121,11 @@ const Page = () => {
           </Heading>
           <BioSection>
             <BioYear>Dec 2022</BioYear>
-            Started working as a Unity Developer at ViewLicity GmbH.
+            Started working as a Fullstack Unity Developer at Viewlicity GmbH.
           </BioSection>
           <BioSection>
             <BioYear>Jun 2021</BioYear>
-            Started working as a Unity Developer at antwerpes AG.
+            Started working as a XR Developer at antwerpes AG.
           </BioSection>
           <BioSection>
             <BioYear>Oct 2020</BioYear>
@@ -151,11 +151,11 @@ const Page = () => {
             I 🫶
           </Heading>
           <Paragraph>
-            Art, Music,{"  "}
+            neovim, Art, Music,{"  "}
             <Link href="https://kjz.itch.io">
               GameDev&nbsp;<ExternalLinkIcon mx="2px" />
             </Link>
-            , Augmented and Virutal Reality, Machine Learning
+            , Augmented and Virtual Reality, Machine Learning
           </Paragraph>
         </Section>
 
