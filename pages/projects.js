@@ -7,6 +7,7 @@ import Layout from "../components/layouts/article";
 import thumbOperatingTheatre from "../public/images/projects/virtual_operating_theatre_01.png";
 import thumbMesh from "../public/images/projects/mesh_cut_01.png";
 import thumbZombie from "../public/images/projects/zombie_01.png";
+import thumbPVX from "../public/images/projects/pvx-showcase.jpg";
 
 const Projects = () => {
   return (
@@ -18,6 +19,14 @@ const Projects = () => {
 
         <SimpleGrid colums={[1, 1, 2]} gap={6}>
           <Section>
+            <ProjectGridItem
+              id="pvx"
+              title="PuttViewX"
+              thumbnail={thumbPVX}
+            >
+              Augmented Reality Golf Training for the outdoors
+            </ProjectGridItem>
+            <Divider mt={4} mb={6} />
             <ProjectGridItem
               id="virtual-operating-theatre"
               title="Virtual Operating Theatre"
