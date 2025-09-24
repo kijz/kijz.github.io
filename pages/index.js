@@ -23,7 +23,6 @@ import {
   IoGameControllerSharp,
   IoLogoDiscord,
   IoLogoGithub,
-  IoLogoTwitter,
   IoLogoLinkedin,
 } from "react-icons/io5";
 
@@ -172,17 +171,6 @@ const Page = () => {
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
                   @kijz
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://x.com/kijzYAP" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoTwitter} />}
-                >
-                  @kijzYAP
                 </Button>
               </Link>
             </ListItem>
